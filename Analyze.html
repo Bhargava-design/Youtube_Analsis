@@ -48,8 +48,6 @@
     <script>
         async function analyzeVideo() {
             const videoLink = document.getElementById("videoLink").value;
-
-            // Replace 'YOUR_API_KEY' with your YouTube Data API key
             const apiKey = 'AIzaSyAywErEwqkqZ641R0P8jhukp5wTik5ygqU';
             const videoId = extractVideoId(videoLink);
             const apiUrl = `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet,statistics`;
@@ -87,8 +85,6 @@
                 <p>Comments: ${statistics.commentCount}</p>
                 <p>Views: ${statistics.viewCount}</p>
             `;
-
-            // You can add earnings calculation logic here and display earnings as well.
         }
     </script>
 </body>
